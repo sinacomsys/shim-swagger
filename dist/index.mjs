@@ -28,12 +28,16 @@ function shim({ fileName, url, excludesEndsPoints, includeEndPoints, }) {
         .then((data) => {
         const filteredEndPoints = Object.fromEntries(Object.entries(data.paths)
             .filter(([key]) => {
+            if (!excludesEndsPoints)
+                return true;
             return !excludesEndsPoints.find((word) => {
                 const reg = new RegExp(word);
                 return reg.test(key);
             });
         })
             .filter(([key]) => {
+            if (!includeEndPoints)
+                return true;
             return includeEndPoints.find((word) => {
                 const reg = new RegExp(word);
                 return reg.test(key);

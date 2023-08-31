@@ -1,6 +1,6 @@
 {
   "name": "shim-swagger",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "modifier swagger file",
   "entry": "./src/index.ts",
   "types": "types/index.d.ts",
