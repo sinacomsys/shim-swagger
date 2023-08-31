@@ -1,0 +1,26 @@
+{
+  "name": "shim-swagger",
+  "version": "1.0.0",
+  "description": "modify swagger file",
+  "types": "types/index.d.ts",
+  "main": "dist/index.js",
+  "files": [
+    "src",
+    "types",
+    "dist"
+  ],
+  "scripts": {
+    "compile": "tsc -b"
+  },
+  "author": "ali mahmoudi",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^5.2.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.7",
+    "@typescript-eslint/eslint-plugin": "^6.5.0",
+    "@typescript-eslint/parser": "^6.5.0",
+    "eslint": "^8.48.0"
+  }
+}
