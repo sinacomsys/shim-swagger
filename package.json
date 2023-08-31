@@ -1,16 +1,15 @@
 {
   "name": "shim-swagger",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "modifier swagger file",
   "entry": "./src/index.ts",
   "types": "types/index.d.ts",
   "main": "dist/index.js",
   "private": false,
   "bin": {
-    "shim-swagger-sagsag": "./bin/index.mjs"
+    "shim-swagger": "./bin/index.mjs"
   },
   "files": [
-    "src",
     "types",
     "dist",
     "bin"
