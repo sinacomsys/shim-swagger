@@ -1,12 +1,13 @@
 {
-  "name": "@shakil-design/shim-swagger",
+  "name": "shim-swagger",
   "version": "1.0.0",
   "description": "modifier swagger file",
   "entry": "./src/index.ts",
   "types": "types/index.d.ts",
   "main": "dist/index.js",
+  "private": false,
   "bin": {
-    "shim-swagger": "./bin/index.mjs"
+    "shim-swagger-sagsag": "./bin/index.mjs"
   },
   "files": [
     "src",
@@ -28,5 +29,9 @@
     "@typescript-eslint/eslint-plugin": "^6.5.0",
     "@typescript-eslint/parser": "^6.5.0",
     "eslint": "^8.48.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   }
 }
