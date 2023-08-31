@@ -1,6 +1,7 @@
 import { readFileSync, writeFile } from "fs";
-import { ShimProps } from "./types";
+import { ShimProps } from "./types.mjs";
 import path from "path";
+import process from "process";
 
 export function getSwaggerConfig() {
   try {
@@ -18,7 +19,7 @@ export function getSwaggerConfig() {
   }
 }
 
-export function shim({
+function shim({
   fileName,
   url,
   excludesEndsPoints,

@@ -1,16 +1,22 @@
 {
-  "name": "shim-swagger",
+  "name": "@shakil-design/shim-swagger",
   "version": "1.0.0",
-  "description": "modify swagger file",
+  "description": "modifier swagger file",
+  "entry": "./src/index.ts",
   "types": "types/index.d.ts",
   "main": "dist/index.js",
+  "bin": {
+    "shim-swagger": "./bin/index.mjs"
+  },
   "files": [
     "src",
     "types",
-    "dist"
+    "dist",
+    "bin"
   ],
   "scripts": {
-    "compile": "tsc -b"
+    "compile": "npx tsc -b",
+    "exe": "node ./dist/index.mjs"
   },
   "author": "ali mahmoudi",
   "license": "ISC",
