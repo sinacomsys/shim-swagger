@@ -31,16 +31,14 @@ function shim({ fileName, url, excludesEndsPoints, includeEndPoints, }) {
             if (!excludesEndsPoints)
                 return true;
             return !excludesEndsPoints.find((word) => {
-                const reg = new RegExp(word);
-                return reg.test(key);
+                return key === word;
             });
         })
             .filter(([key]) => {
             if (!includeEndPoints)
                 return true;
             return includeEndPoints.find((word) => {
-                const reg = new RegExp(word);
-                return reg.test(key);
+                return key === word;
             });
         }));
         const newSwagger = Object.assign(Object.assign({}, data), { paths: filteredEndPoints });
